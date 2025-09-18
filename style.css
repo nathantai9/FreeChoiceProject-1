@@ -1,0 +1,76 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #e0e5ec 0%, #f8fafc 100%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 16px 40px 0 rgba(60,60,60,0.10), 0 1.5px 7px 0 rgba(60,60,60,0.07);
+  border-radius: 24px;
+  padding: 40px 32px;
+  max-width: 420px;
+  margin: 3rem auto;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+input, button {
+  font-size: 1.1rem;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  padding: 0.75em 1.1em;
+  margin: 1em 0;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 2px 6px rgba(0,0,0,.03);
+  transition: box-shadow 0.18s, transform 0.18s, border 0.18s;
+}
+
+input:focus, button:focus {
+  border: 2px solid #007aff;
+  box-shadow: 0 4px 15px rgba(0,122,255,.08);
+}
+
+button {
+  background: linear-gradient(90deg, #007aff 0%, #265df2 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,122,255,0.15);
+  transition: background 0.25s, transform 0.12s;
+}
+
+button:hover, button:focus {
+  transform: scale(1.05);
+  filter: brightness(1.06);
+}
+
+table {
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px 0 rgba(60,60,60,0.042);
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.85em 1.2em;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 22px 8px;
+    max-width: 99vw;
+  }
+}
